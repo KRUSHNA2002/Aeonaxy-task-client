@@ -130,13 +130,13 @@ const Card = () => {
                                                                     <span className='text-left font-bold flex justify-start pl-10'>Storyboard Name</span>
                                                                     <input
                                                                         type="text"
-                                                                        className='w-[400px] h-[45px] border mt-2 border-gray-200 form-control p-2 rounded'
+                                                                        className='w-full md:w-[400px] h-[45px] border mt-2 border-gray-200 form-control p-2 rounded'
                                                                         placeholder='e.g. Default Project Storyboard'
                                                                         value={inputValue}
                                                                         onChange={handleChange}
                                                                     />
                                                                     <span className='text-left font-bold flex justify-start pl-10 mt-3'>Frame Size</span>
-                                                                    <select name="" id="" className='w-[400px] h-[45px] p-2 font-medium rounded border border-gray-200'>
+                                                                    <select name="" id="" className='w-full md:w-[400px] h-[45px] p-2 font-medium rounded border border-gray-200'>
                                                                         <option value="" className='p-2'>Landscape (16.9)</option>
                                                                         <option value="">Portrait</option>
                                                                     </select>
