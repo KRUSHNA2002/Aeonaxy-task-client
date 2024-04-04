@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 
 const Card = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,13 +41,13 @@ const Card = () => {
                                                     <span className='text-left font-bold flex justify-start pl-10'>Storyboard Name</span>
                                                     <input
                                                         type="text"
-                                                        className='w-[400px] h-[45px] border mt-2 border-gray-200 form-control p-2 rounded'
+                                                        className='w-full md:w-[400px] h-[45px] border mt-2 border-gray-200 form-control p-2 rounded'
                                                         placeholder='e.g. Default Project Storyboard'
                                                         value={inputValue}
                                                         onChange={handleChange}
                                                     />
                                                     <span className='text-left font-bold flex justify-start pl-10 mt-3'>Frame Size</span>
-                                                    <select name="" id="" className='w-[400px] h-[45px] p-2 font-medium rounded border border-gray-200'>
+                                                    <select name="" id="" className='w-full md:w-[400px] h-[45px] p-2 font-medium rounded border border-gray-200'>
                                                         <option value="" className='p-2'>Landscape (16.9)</option>
                                                         <option value="">Portrait</option>
                                                     </select>
@@ -102,11 +103,11 @@ const Card = () => {
                             <div className='h-auto w-22 bg-white p-1'>
                                 <div className='grid grid-cols-6 md:grid-cols-12 ms-auto'>
                                     <div className="max-w-4xl me-2 col-span-6 md:col-span-4 lg:col-span-4 bg-white border border-gray-50 rounded-lg shadow dark:bg-white white:border-gray-700">
-                                        <a href="#">
+                                       <a href='#' >
                                             <img className="rounded-t-lg h-40 w-full" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712016000&semt=sph" alt="" />
                                         </a>
                                         <div className="p-5">
-                                            <a href="#">
+                                           <a href='#' >
                                                 <h6 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">AI Character Demo Storyboard</h6>
                                             </a>
                                             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Updated 19 mar 2023</p>
